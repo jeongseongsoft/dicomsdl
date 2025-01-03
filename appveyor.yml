@@ -11,13 +11,13 @@ environment:
     CIBW_TEST_SKIP: cp310-win* cp*musllinux_*
 
   matrix:
-    - APPVEYOR_BUILD_WORKER_IMAGE: macos-bigsur
-      APPVEYOR_JOB_NAME: "python37-macos-bigsur-1"
-      CIBW_BUILD: cp311-macosx_universal2 cp312-macosx_universal2 cp313-macosx_universal2
-      OSX_ARCHITECTURES: universal2
-      CIBW_CMD_OPTION: --archs universal2
-      CIBW_VERSION: 2.22.0
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: macos-bigsur
+    #   APPVEYOR_JOB_NAME: "python37-macos-bigsur-1"
+    #   CIBW_BUILD: cp311-macosx_universal2 cp312-macosx_universal2 cp313-macosx_universal2
+    #   OSX_ARCHITECTURES: universal2
+    #   CIBW_CMD_OPTION: --archs universal2
+    #   CIBW_VERSION: 2.22.0
+    #   PYBIND11_BRANCH: stable
 
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
       APPVEYOR_JOB_NAME: "python37-vs2017-4"
@@ -25,28 +25,28 @@ environment:
       CIBW_VERSION: 2.22.0
       PYBIND11_BRANCH: stable
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
-      APPVEYOR_JOB_NAME: "python37-ubuntu-7"
-      CIBW_BUILD: cp313-*
-      CIBW_CMD_OPTION:
-      CIBW_VERSION: 2.22.0
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+    #   APPVEYOR_JOB_NAME: "python37-ubuntu-7"
+    #   CIBW_BUILD: cp313-*
+    #   CIBW_CMD_OPTION:
+    #   CIBW_VERSION: 2.22.0
+    #   PYBIND11_BRANCH: stable
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: macos-bigsur
-      APPVEYOR_JOB_NAME: "python37-macos-bigsur-1-arm"
-      CIBW_BUILD: cp311-macosx_arm64 cp312-macosx_arm64 cp313-macosx_arm64
-      OSX_ARCHITECTURES: arm64
-      CIBW_CMD_OPTION: --archs arm64
-      CIBW_VERSION: 2.22.0
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: macos-bigsur
+    #   APPVEYOR_JOB_NAME: "python37-macos-bigsur-1-arm"
+    #   CIBW_BUILD: cp311-macosx_arm64 cp312-macosx_arm64 cp313-macosx_arm64
+    #   OSX_ARCHITECTURES: arm64
+    #   CIBW_CMD_OPTION: --archs arm64
+    #   CIBW_VERSION: 2.22.0
+    #   PYBIND11_BRANCH: stable
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: macos-bigsur
-      APPVEYOR_JOB_NAME: "python37-macos-bigsur-2"
-      CIBW_BUILD: cp39-macosx_universal2 cp310-macosx_universal2
-      OSX_ARCHITECTURES: universal2
-      CIBW_CMD_OPTION: --archs universal2
-      CIBW_VERSION: 2.2.2
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: macos-bigsur
+    #   APPVEYOR_JOB_NAME: "python37-macos-bigsur-2"
+    #   CIBW_BUILD: cp39-macosx_universal2 cp310-macosx_universal2
+    #   OSX_ARCHITECTURES: universal2
+    #   CIBW_CMD_OPTION: --archs universal2
+    #   CIBW_VERSION: 2.2.2
+    #   PYBIND11_BRANCH: stable
 
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
       APPVEYOR_JOB_NAME: "python37-vs2017-2a"
@@ -60,33 +60,33 @@ environment:
       CIBW_VERSION: 2.16.2
       PYBIND11_BRANCH: stable
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
-      APPVEYOR_JOB_NAME: "python37-ubuntu-3"
-      CIBW_BUILD: cp39-*
-      CIBW_CMD_OPTION:
-      CIBW_VERSION: 2.2.2
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+    #   APPVEYOR_JOB_NAME: "python37-ubuntu-3"
+    #   CIBW_BUILD: cp39-*
+    #   CIBW_CMD_OPTION:
+    #   CIBW_VERSION: 2.2.2
+    #   PYBIND11_BRANCH: stable
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
-      APPVEYOR_JOB_NAME: "python37-ubuntu-4"
-      CIBW_BUILD: cp310-*
-      CIBW_CMD_OPTION:
-      CIBW_VERSION: 2.2.2
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+    #   APPVEYOR_JOB_NAME: "python37-ubuntu-4"
+    #   CIBW_BUILD: cp310-*
+    #   CIBW_CMD_OPTION:
+    #   CIBW_VERSION: 2.2.2
+    #   PYBIND11_BRANCH: stable
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
-      APPVEYOR_JOB_NAME: "python37-ubuntu-5"
-      CIBW_BUILD: cp311-*
-      CIBW_CMD_OPTION:
-      CIBW_VERSION: 2.11.2
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+    #   APPVEYOR_JOB_NAME: "python37-ubuntu-5"
+    #   CIBW_BUILD: cp311-*
+    #   CIBW_CMD_OPTION:
+    #   CIBW_VERSION: 2.11.2
+    #   PYBIND11_BRANCH: stable
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
-      APPVEYOR_JOB_NAME: "python37-ubuntu-6"
-      CIBW_BUILD: cp312-*
-      CIBW_CMD_OPTION:
-      CIBW_VERSION: 2.16.2
-      PYBIND11_BRANCH: stable
+    # - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+    #   APPVEYOR_JOB_NAME: "python37-ubuntu-6"
+    #   CIBW_BUILD: cp312-*
+    #   CIBW_CMD_OPTION:
+    #   CIBW_VERSION: 2.16.2
+    #   PYBIND11_BRANCH: stable
 
 stack: python 3.11
 
